@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - elevation@localhost" uuid="a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24">
+    <database-info product="MySQL" version="5.7.10" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="elevation"/>
+    <table name="TBLelevation" schema="" catalog="elevation" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="latitude" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="longitude" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="elevation" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="unique_index" unique="true" columns="latitude,longitude"/>
+      <index name="index2" unique="false" columns="latitude,longitude,elevation"/>
+    </table>
+    <table name="TBLelevationCPY" schema="" catalog="elevation" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="latitude" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="longitude" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="elevation" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+    </table>
+    <table name="TBLelevationV1" schema="" catalog="elevation" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="latitude" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="longitude" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="elevation" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="index2" unique="false" columns="latitude,longitude,elevation"/>
+    </table>
+    <procedure name="calc_visibility" schema="" catalog="elevation" type="1"/>
+    <procedure name="calc_visibility2" schema="" catalog="elevation" type="1"/>
+    <procedure name="calc_visibility3" schema="" catalog="elevation" type="1"/>
+    <procedure name="check_duplicates" schema="" catalog="elevation" type="1"/>
+    <procedure name="remove_duplicates" schema="" catalog="elevation" type="1"/>
+  </data-source>
+</component>
