@@ -15,5 +15,7 @@ In order to calculate the visible height, I needed to determine the height that 
 
 <img src="https://github.com/dgoodburn/elevation/blob/master/elevation_pic.png" width="288">
 
+## RESULTS
+
 Click the following link to see full notebook:
 http://nbviewer.jupyter.org/github/dgoodburn/elevation/blob/master/Elevations.ipynb
