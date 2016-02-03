@@ -62,18 +62,28 @@
       <file leaf-file-name="elevation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/elevation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.458333">
+            <state vertical-scroll-proportion="-7755.625">
               <caret line="12414" column="7" selection-start-line="12375" selection-start-column="8" selection-end-line="12414" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elevation_top.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="elevation_top.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/elevation_top.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83554375">
+            <state vertical-scroll-proportion="-13.125">
               <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="elevation_topfar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/elevation_topfar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3580902">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -97,6 +107,7 @@
         <option value="$PROJECT_DIR$/elevation.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/elevation_top.html" />
+        <option value="$PROJECT_DIR$/elevation_topfar.html" />
       </list>
     </option>
   </component>
@@ -529,18 +540,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/elevation_top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/elevation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.458333">
+        <state vertical-scroll-proportion="-7755.625">
           <caret line="12414" column="7" selection-start-line="12375" selection-start-column="8" selection-end-line="12414" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elevation_top.html">
+    <entry file="file://$PROJECT_DIR$/elevation_topfar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83554375">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.3580902">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding />
         </state>
       </provider>
