@@ -401,12 +401,13 @@ def sql_litedb():
 
 def get_files():
 
-    engine2=create_engine('sqlite://', echo=True)
+    #engine2=create_engine('sqlite://', echo=True)
     query = "SELECT * FROM TBLelevationV1"
 
-    df = pd.read_sql(query, engine2)
-    print df.head()
+    df = pd.read_sql(query, engine)
+    return df
 
+#get_files().to_csv('elevationV1.csv')
 
 def setup_procedure():
 
@@ -506,9 +507,10 @@ def setup_procedure():
 
     #sql.execute(query, engine2)
     results = c.execute(query).fetchall()
-    print results
+    return results
 
 
 #sql_litedb()
-setup_procedure()
+#setup_procedure()
 #get_files()
+
