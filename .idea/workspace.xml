@@ -14,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/elevation$elevation.coverage" NAME="elevation Coverage Results" MODIFIED="1454272074846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/elevation$elevation.coverage" NAME="elevation Coverage Results" MODIFIED="1456116270175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -24,6 +24,24 @@
     <option name="GROUP_BY_TYPE" value="true" />
     <option name="SORT_CHILDREN" value="false" />
     <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="SQLite" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="TBLelevation" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
     <PATH>
       <PATH_ELEMENT>
         <option name="myItemId" />
@@ -49,41 +67,36 @@
         <entry file="file://$PROJECT_DIR$/elevation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="365" column="50" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
+              <caret line="482" column="26" selection-start-line="482" selection-start-column="26" selection-end-line="482" selection-end-column="26" />
               <folding>
                 <element signature="e#28#64#0" expanded="true" />
-                <marker date="1454272071000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
-                <marker date="1454272071000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+                <marker date="1456116368000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
+                <marker date="1456116368000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+                <marker date="1456116368000" expanded="true" signature="10412:10469" placeholder="SELECT * FRO..TBLelevationV1..." />
+                <marker date="1456116368000" expanded="true" signature="10412:10507" placeholder="SELECT * FRO..TBLelvation..." />
+                <marker date="1456116368000" expanded="true" signature="10771:10808" placeholder="SELECT * FRO..TBLelevationV1..." />
+                <marker date="1456116368000" expanded="true" signature="11037:11065" placeholder="SELECT * FRO..TBLelevationV1..." />
+                <marker date="1456116368000" expanded="true" signature="11420:11461" placeholder="SELECT MAX(e..TBLelevationV1..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elevation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elevation.html">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7755.625">
-              <caret line="12414" column="7" selection-start-line="12375" selection-start-column="8" selection-end-line="12414" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elevation_top.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elevation_top.html">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d74f800a-d317-432b-87b4-dccc3d8a919a/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elevation_topfar.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/elevation_topfar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3580902">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.42096218">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -103,11 +116,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/instance/__init__.py" />
-        <option value="$PROJECT_DIR$/elevation.py" />
         <option value="$PROJECT_DIR$/elevation.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/elevation_top.html" />
         <option value="$PROJECT_DIR$/elevation_topfar.html" />
+        <option value="$PROJECT_DIR$/coordinates.json" />
+        <option value="$PROJECT_DIR$/elevation2.html" />
+        <option value="dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility" />
+        <option value="dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility3" />
+        <option value="dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility2" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/console.sql" />
+        <option value="dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility4" />
+        <option value="$PROJECT_DIR$/elevation.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d74f800a-d317-432b-87b4-dccc3d8a919a/console.sql" />
       </list>
     </option>
   </component>
@@ -146,7 +167,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,7 +202,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,25 +451,26 @@
     <frame x="0" y="23" width="1280" height="732" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23505655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.104200326" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1453958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15024233" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -470,53 +492,70 @@
     <entry file="file://$PROJECT_DIR$/elevation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="365" column="50" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
+          <caret line="482" column="26" selection-start-line="482" selection-start-column="26" selection-end-line="482" selection-end-column="26" />
           <folding>
             <element signature="e#28#64#0" expanded="true" />
-            <marker date="1454272071000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
-            <marker date="1454272071000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
+            <marker date="1456116368000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10469" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10507" placeholder="SELECT * FRO..TBLelvation..." />
+            <marker date="1456116368000" expanded="true" signature="10771:10808" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11037:11065" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11420:11461" placeholder="SELECT MAX(e..TBLelevationV1..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elevation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elevation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="365" column="50" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
-          <folding>
-            <element signature="e#28#64#0" expanded="true" />
-            <marker date="1454272071000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
-            <marker date="1454272071000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elevation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instance/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024509804">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d74f800a-d317-432b-87b4-dccc3d8a919a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="365" column="50" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
+          <folding>
+            <element signature="e#28#64#0" expanded="true" />
+            <marker date="1456116368000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
+            <marker date="1456116368000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10469" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10507" placeholder="SELECT * FRO..TBLelvation..." />
+            <marker date="1456116368000" expanded="true" signature="10771:10808" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11037:11065" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11420:11461" placeholder="SELECT MAX(e..TBLelevationV1..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12414" column="7" selection-start-line="12375" selection-start-column="8" selection-end-line="12414" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation_top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation_topfar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -527,9 +566,45 @@
           <caret line="365" column="50" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
           <folding>
             <element signature="e#28#64#0" expanded="true" />
-            <marker date="1454272071000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
-            <marker date="1454272071000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
+            <marker date="1456116368000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10469" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10507" placeholder="SELECT * FRO..TBLelvation..." />
+            <marker date="1456116368000" expanded="true" signature="10771:10808" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11037:11065" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11420:11461" placeholder="SELECT MAX(e..TBLelevationV1..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="365" column="50" selection-start-line="365" selection-start-column="50" selection-end-line="365" selection-end-column="50" />
+          <folding>
+            <element signature="e#28#64#0" expanded="true" />
+            <marker date="1456116368000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
+            <marker date="1456116368000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10469" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10507" placeholder="SELECT * FRO..TBLelvation..." />
+            <marker date="1456116368000" expanded="true" signature="10771:10808" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11037:11065" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11420:11461" placeholder="SELECT MAX(e..TBLelevationV1..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -542,24 +617,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/elevation_top.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elevation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7755.625">
-          <caret line="12414" column="7" selection-start-line="12375" selection-start-column="8" selection-end-line="12414" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="-13.208333">
+          <caret line="175" column="56" selection-start-line="33" selection-start-column="36" selection-end-line="175" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/elevation_topfar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3580902">
+        <state vertical-scroll-proportion="-12.5">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7725.5415">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.75">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coordinates.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3333333">
+          <caret line="990" column="7" selection-start-line="990" selection-start-column="7" selection-end-line="990" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ecd1a5ba-6913-4192-b39e-07ff50925293/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0">
+          <caret line="2" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.366667">
+          <caret line="99" column="3" selection-start-line="65" selection-start-column="4" selection-end-line="99" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbprocedure:/7cd55f8e/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/elevation..calc_visibility">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.633333">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7cd55f8e/d74f800a-d317-432b-87b4-dccc3d8a919a/..TBLelevationV1">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a03069e4-fb1d-4b4f-bc1d-5b6721ed8f24/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elevation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="482" column="26" selection-start-line="482" selection-start-column="26" selection-end-line="482" selection-end-column="26" />
+          <folding>
+            <element signature="e#28#64#0" expanded="true" />
+            <marker date="1456116368000" expanded="true" signature="3063:3127" placeholder="INSERT INTO ..." />
+            <marker date="1456116368000" expanded="true" signature="8762:8838" placeholder="SELECT T1.lo..TBLelevation..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10469" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="10412:10507" placeholder="SELECT * FRO..TBLelvation..." />
+            <marker date="1456116368000" expanded="true" signature="10771:10808" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11037:11065" placeholder="SELECT * FRO..TBLelevationV1..." />
+            <marker date="1456116368000" expanded="true" signature="11420:11461" placeholder="SELECT MAX(e..TBLelevationV1..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d74f800a-d317-432b-87b4-dccc3d8a919a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42096218">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding />
         </state>
       </provider>

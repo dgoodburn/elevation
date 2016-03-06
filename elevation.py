@@ -369,4 +369,146 @@ def plot_3d():
     threedee.scatter(df.X, df.Y, df.Z, c=df.elevation*1000)
     plt.show()
 
-plot_3d()
+#plot_3d()
+
+def sql_litedb():
+    # load in memory sqlite database from mysql
+
+    import sqlite3 as db
+    engine2=create_engine('sqlite:///temp.db', echo=True)
+
+    query = "SELECT latitude, longitude, elevation FROM TBLelevationV1"
+
+    df = pd.read_sql(query, engine)
+
+    df.to_sql('TBLelevation', engine2, if_exists='replace', index=False)
+
+    ind = "CREATE UNIQUE INDEX lat_long_el_index ON TBLelevation(latitude, longitude, elevation);"
+
+    conn = db.connect('temp.db')
+    c = conn.cursor()
+    c.execute(ind)
+
+    query = "SELECT * FROM TBLelevationV1 LIMIT 10"
+
+    results = c.execute(query).fetchall()
+    print results
+
+    #setup_procedure()
+    #df = pd.read_sql(query, engine2)
+    #print df.head()
+
+
+def get_files():
+
+    engine2=create_engine('sqlite://', echo=True)
+    query = "SELECT * FROM TBLelevationV1"
+
+    df = pd.read_sql(query, engine2)
+    print df.head()
+
+
+def setup_procedure():
+
+    import sqlite3 as db
+    #engine2=create_engine('sqlite://', echo=True)
+
+    conn = db.connect('temp.db')
+    c = conn.cursor()
+
+    DistBtwnLat = 112000
+    Earth = 6371000
+    Radius = 2.0
+    PIvar = (2.0 / 360 * 3.1415)
+    NumNeeded = 1000
+    #MaxHeight = ( "SELECT MAX(elevation) FROM TBLelevationV1");
+    MaxHeight = 6000
+    #MaxDistance = Earth*SQRT(2-2/(MaxHeight/Earth+1))
+    MaxDistance = (Earth*sqrt(2-2/((MaxHeight-3000)/Earth+1)))
+    MaxDistance = (6371000*sqrt(2-2/((6000-3000)/6371000+1)))
+    ElevationDiff = 4000
+
+    query = """
+
+        SELECT
+          S1.LO1,
+          S1.LA1,
+          S1.EL1,
+          S2.LO1,
+          S2.LA1,
+          S2.EL1,
+          ((SIN(S1.LA1 * PIvar) * SIN(S2.LA1 * PIvar) + COS(S1.LA1 * PIvar) *
+                COS(S2.LA1 * PIvar) * COS(S2.LO1 * PIvar - S1.LO1 * PIvar))*
+           (S2.EL1/Earth+1)-1)*Earth-S1.EL1 AS VISIBLE
+        FROM
+          (SELECT
+             T1.longitude AS LO1,
+             T1.latitude  AS LA1,
+             T1.elevation AS EL1
+           FROM TBLelevation AS T1
+           WHERE T1.elevation > 0 AND T1.elevation < (MaxHeight-ElevationDiff)) AS S1
+          CROSS JOIN
+          (SELECT
+             T1.longitude AS LO1,
+             T1.latitude  AS LA1,
+             T1.elevation AS EL1
+           FROM TBLelevation AS T1
+           WHERE T1.elevation > ElevationDiff) AS S2
+        WHERE ABS(S1.LA1 - S2.LA1) < (MaxDistance / DistBtwnLat)
+          AND S2.EL1 - S1.EL1 > ElevationDiff
+          AND (1 - (pow((MaxDistance / Earth), 2) / 2)) <
+              (SIN(S1.LA1 * PIvar) * SIN(S2.LA1 * PIvar) + COS(S1.LA1 * PIvar) *
+              COS(S2.LA1 * PIvar) * COS(S2.LO1 * PIvar - S1.LO1 * PIvar))
+          AND ((SIN(S1.LA1 * PIvar) * SIN(S2.LA1 * PIvar) + COS(S1.LA1 * PIvar) *
+                COS(S2.LA1 * PIvar) * COS(S2.LO1 * PIvar - S1.LO1 * PIvar))*
+               (S2.EL1/Earth+1)-1)*Earth-S1.EL1 > ElevationDiff
+
+        ORDER BY VISIBLE DESC
+      ;
+
+
+    """ #% (table, i, i)
+
+    query = """
+
+        SELECT
+          S1.LO1,
+          S1.LA1,
+          S1.EL1,
+          S2.LO1,
+          S2.LA1,
+          S2.EL1,
+          ((SIN(S1.LA1 * (2.0 / 360 * 3.1415)) * SIN(S2.LA1 * (2.0 / 360 * 3.1415)) + COS(S1.LA1 * (2.0 / 360 * 3.1415)) *
+                COS(S2.LA1 * (2.0 / 360 * 3.1415)) * COS(S2.LO1 * (2.0 / 360 * 3.1415) - S1.LO1 * (2.0 / 360 * 3.1415)))*
+           (S2.EL1/6371000+1)-1)*6371000-S1.EL1 AS VISIBLE
+        FROM
+          (SELECT
+             T1.longitude AS LO1,
+             T1.latitude  AS LA1,
+             T1.elevation AS EL1
+           FROM TBLelevation AS T1
+           WHERE T1.elevation > 0 AND T1.elevation < (6000-4000)) AS S1
+          CROSS JOIN
+          (SELECT
+             T1.longitude AS LO1,
+             T1.latitude  AS LA1,
+             T1.elevation AS EL1
+           FROM TBLelevation AS T1
+           WHERE T1.elevation > 4000) AS S2
+        WHERE ABS(S1.LA1 - S2.LA1) < ((6371000*sqrt(2-2/((6000-3000)/6371000+1))) / 112000)
+          AND S2.EL1 - S1.EL1 > 4000
+
+        ORDER BY VISIBLE DESC
+      ;
+
+
+    """
+
+    #sql.execute(query, engine2)
+    results = c.execute(query).fetchall()
+    print results
+
+
+#sql_litedb()
+setup_procedure()
+#get_files()

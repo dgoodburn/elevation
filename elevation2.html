@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple Polylines</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+
+    function initMap() {
+
+        var flightPlanCoordinates = [];
+
+        getData().always(function() { drawMap(); });
+
+        function getData() {
+
+            return $.getJSON("coordinates.json", function (json) {
+
+                flightPlanCoordinates = json.flightPlanCoordinates;
+
+            });
+        }
+
+        function drawMap() {
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 2,
+                center: {lat: 20, lng: 0},
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            });
+
+            var flightPath = [];
+            var weight_counter = 0;
+            var strkcolor = 'red';
+            var weight_countercolor = 5;
+            flightPlanCoordinates.forEach(
+                    function addFlightPath(coordinates) {
+                        if (weight_counter < 20000) {
+                            strkcolor = 'red';
+                        }
+                        else if (weight_counter < 6000) {
+                            strkcolor = 'orange';
+                        }
+                        else {
+                            strkcolor = 'yellow';
+                        }
+
+                        flightPath.push(new google.maps.Polyline({
+                            path: coordinates,
+                            geodesic: true,
+                            strokeColor: strkcolor,
+                            strokeOpacity: 0.5,
+                            //strokeWeight: 2}));
+                            strokeWeight: weight_countercolor
+                        }));
+                        flightPath[flightPath.length - 1].setMap(map);
+                        weight_countercolor = weight_countercolor * .9997;
+                        weight_counter = weight_counter + 1;
+                    }
+            );
+
+        }
+    }
+
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBilFRVNnIt4r8WCD9FJC1O4F7lSOqSTkE&signed_in=true&callback=initMap"></script>
+</body>
+</html>

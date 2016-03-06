@@ -33,7 +33,19 @@
     <procedure name="calc_visibility" schema="" catalog="elevation" type="1"/>
     <procedure name="calc_visibility2" schema="" catalog="elevation" type="1"/>
     <procedure name="calc_visibility3" schema="" catalog="elevation" type="1"/>
+    <procedure name="calc_visibility4" schema="" catalog="elevation" type="1"/>
     <procedure name="check_duplicates" schema="" catalog="elevation" type="1"/>
     <procedure name="remove_duplicates" schema="" catalog="elevation" type="1"/>
+  </data-source>
+  <data-source name="SQLite" uuid="d74f800a-d317-432b-87b4-dccc3d8a919a">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="TBLelevation" schema="" catalog="" type="TABLE">
+      <column name="latitude" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <column name="longitude" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <column name="elevation" sqlType="FLOAT" precision="2000000000" scale="10" nullable="true" jdbcType="6"/>
+      <index name="lat_long_el_index" unique="true" columns="latitude,longitude,elevation"/>
+    </table>
   </data-source>
 </component>
